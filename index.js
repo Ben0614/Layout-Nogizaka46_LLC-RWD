@@ -39,6 +39,7 @@ nav.addEventListener('click', function () {
 
 })
 
+
 // 滑鼠觸碰就變色
 nav.addEventListener('mouseover', function () {
     bar_1.style.backgroundColor = `#000`;
