@@ -13,6 +13,8 @@ $(function () {
             $('.bar-2').stop().slideToggle().css('transform', 'rotate(-20deg)')
             $('.bar-1').stop().slideToggle().css('top', '50%')
             $('.bar-2').stop().slideToggle().css('top', '50%')
+            // 開啟時隱藏滾動條，不讓頁面滾動
+            $('body').css('overflow','hidden')
         } else {
             $('.menu').stop().slideToggle();
             $('.menu-bg').stop().slideToggle();
@@ -20,6 +22,8 @@ $(function () {
             $('.bar-2').stop().slideToggle().css('transform', 'rotate(0)')
             $('.bar-1').stop().slideToggle().css('top', '40%')
             $('.bar-2').stop().slideToggle().css('top', '60%')
+            // 關閉時開啟滾動條
+            $('body').css('overflow','auto')
         }
     })
 })
