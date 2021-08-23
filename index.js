@@ -7,21 +7,21 @@ $(function () {
         menuOpened = !menuOpened;
 
         if (menuOpened == true) {
-            $('.menu').stop().slideToggle();
-            $('.menu-bg').stop().slideToggle();
-            $('.bar-1').stop().slideToggle().css('transform', 'rotate(20deg)');
-            $('.bar-2').stop().slideToggle().css('transform', 'rotate(-20deg)');
-            $('.bar-1').stop().slideToggle().css('top', '50%');
-            $('.bar-2').stop().slideToggle().css('top', '50%');
+            $('.menu').stop().slideDown();
+            $('.menu-bg').stop().slideDown();
+            $('.bar-1').css('transform', 'rotate(20deg)');
+            $('.bar-2').css('transform', 'rotate(-20deg)');
+            $('.bar-1').css('top', '50%');
+            $('.bar-2').css('top', '50%');
             // 開啟時隱藏滾動條，不讓頁面滾動
             $('body').css('overflow','hidden');
         } else {
-            $('.menu').stop().slideToggle();
-            $('.menu-bg').stop().slideToggle();
-            $('.bar-1').stop().slideToggle().css('transform', 'rotate(0)');
-            $('.bar-2').stop().slideToggle().css('transform', 'rotate(0)');
-            $('.bar-1').stop().slideToggle().css('top', '40%');
-            $('.bar-2').stop().slideToggle().css('top', '60%');
+            $('.menu').stop().slideUp();
+            $('.menu-bg').stop().slideUp();
+            $('.bar-1').css('transform', 'rotate(0)');
+            $('.bar-2').css('transform', 'rotate(0)');
+            $('.bar-1').css('top', '40%');
+            $('.bar-2').css('top', '60%');
             // 關閉時開啟滾動條
             $('body').css('overflow','auto');
         }
